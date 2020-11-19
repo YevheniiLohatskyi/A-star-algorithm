@@ -5,7 +5,8 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class Cell{
+public class Cell {
+
     private int x;
     private int y;
     private int weight;

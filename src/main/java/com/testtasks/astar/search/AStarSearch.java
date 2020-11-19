@@ -98,14 +98,14 @@ public class AStarSearch {
             case 2:
                 for (int i = 0; i < neighbours.size(); i++) {
                     Cell c = neighbours.get(i);
-                    int[] increments = new int[] {0, 0, 0, 0};
+                    int[] increments = new int[]{0, 0, 0, 0};
 
                     switch (c.getDirection()) {
                         case "right":
-                            increments = new int[] {1, 1, 0, 1};
+                            increments = new int[]{1, 1, 0, 1};
                             break;
                         case "down":
-                            increments = new int[] {0, 1, 1, 1};
+                            increments = new int[]{0, 1, 1, 1};
                             break;
                     }
 
@@ -119,20 +119,20 @@ public class AStarSearch {
             case 3:
                 for (int i = 0; i < neighbours.size(); i++) {
                     Cell c = neighbours.get(i);
-                    int[] increments = new int[] {0, 0, 0, 0, 0, 0};
+                    int[] increments = new int[]{0, 0, 0, 0, 0, 0};
 
                     switch (c.getDirection()) {
                         case "up":
-                            increments = new int[] {-1, 0, 1, -1, -1, -1};
+                            increments = new int[]{-1, 0, 1, -1, -1, -1};
                             break;
                         case "left":
-                            increments = new int[] {-1, -1, -1, -1, 0, 1};
+                            increments = new int[]{-1, -1, -1, -1, 0, 1};
                             break;
                         case "right":
-                            increments = new int[] {1, 1, 1, -1, 0, 1};
+                            increments = new int[]{1, 1, 1, -1, 0, 1};
                             break;
                         case "down":
-                            increments = new int[] {-1, 0, 1, 1, 1, 1};
+                            increments = new int[]{-1, 0, 1, 1, 1, 1};
                             break;
                     }
 
@@ -152,17 +152,17 @@ public class AStarSearch {
     private List<Cell> getNeighbours(Cell cell) {
         List<Cell> neighbours = new ArrayList<>();
 
-        int[] borders = new int[] {100, 0, 0, 100};
+        int[] borders = new int[]{100, 0, 0, 100};
 
         switch (objectSize) {
             case 1:
-                borders = new int[] {0, 99, 99, 0};
+                borders = new int[]{0, 99, 99, 0};
                 break;
             case 2:
-                borders = new int[] {0, 98, 98, 0};
+                borders = new int[]{0, 98, 98, 0};
                 break;
             case 3:
-                borders = new int[] {1, 98, 98, 1};
+                borders = new int[]{1, 98, 98, 1};
                 break;
         }
 
