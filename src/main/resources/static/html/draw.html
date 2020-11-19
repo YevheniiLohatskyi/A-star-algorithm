@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Draw</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<button onclick="drawObstacles()">Draw obstacles</button>
+<button onclick="eraseObstacles()">Erase obstacles</button>
+<button onclick="setStartPoint()">Set start point</button>
+<button onclick="setEndPoint()">Set end point</button>
+<button onclick="setSize(1)">1x1</button>
+<button onclick="setSize(2)">2x2</button>
+<button onclick="setSize(3)">3x3</button>
+<button onclick="submit()">Find shortest path</button>
+<button><a href="/">Find shortest path</a></button>
+<p></p>
+<canvas id="canvas1" width="1000" height="1000" style="border:2px solid black;"></canvas>
+<script src="/js/draw.js"></script>
+</body>
+</html>
